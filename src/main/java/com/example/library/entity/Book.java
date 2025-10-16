@@ -11,7 +11,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Book {
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    @Column(name = "book_id")
     private Long id;
 
     @Column(nullable = false, length = 100)
@@ -19,5 +20,4 @@ public class Book {
 
     @Column(nullable = false)
     private boolean available;
-
 }
