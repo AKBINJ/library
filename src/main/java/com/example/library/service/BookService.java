@@ -1,4 +1,4 @@
 package com.example.library.service;
 
-public class BookService {
+public interface BookService {
 }

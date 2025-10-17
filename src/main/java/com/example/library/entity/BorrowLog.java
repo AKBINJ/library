@@ -30,6 +30,7 @@ public class BorrowLog {
     @Column(nullable = false)
     private Result result;
 
+    @Column(length = 200)
     private String message;
 
     @Column(name = "created_at", nullable = false)
